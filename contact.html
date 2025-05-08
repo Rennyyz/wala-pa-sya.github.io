@@ -1,0 +1,178 @@
+<html>
+    <head>
+        
+          
+        <title>Wala pa daw</title>
+        <style>s
+            footer{
+        
+            text-align: center;
+            padding: 30px, 0;
+            margin-top: 50px;
+          
+            }
+.hakdig{
+    
+            padding: 30px; 
+            border-radius: 5px; 
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3) ; 
+            text-align: center;
+        color: aqua;
+        }
+        .hakdog a{
+ text-decoration: none;
+text-align: center;
+        }
+     .hakdog{
+        font-size: 1.1em;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.3)
+
+     } 
+     .hakdog a:hover{
+        font-size: 1.2em;
+        text-shadow: 0px 5px 25px white;
+     }
+
+                    body {
+                        font-family: Arial, sans-serif;
+                        line-height: 1.6;
+                        margin: 0;
+                        padding: 0;
+                        color: black;
+                        background-color: #f5f5f5;
+                    }
+                    .container {
+                        max-width: 800px;
+                        margin: 20px auto;
+                        padding: 20px;
+                        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+                        border-radius: 5px;
+                    }
+                    h1 {
+color: #2c3e50;
+text-align: center;
+margin-bottom: 30px;
+}
+.contact-info {
+margin-bottom: 30px;
+}
+.contact-info p {
+margin: 10px 0;
+}
+.contact-form label {
+display: block;
+margin-bottom: 5px;
+font-weight: bold;
+}
+.contact-form input, 
+.contact-form textarea {
+width: 100%;
+padding: 10px;
+margin-bottom: 15px;
+border: 1px solid #ddd;
+border-radius: 4px;
+box-sizing: border-box;
+}
+.contact-form textarea {
+height: 150px;
+}
+.submit-btn {
+    background-color: black;
+color: white;
+border: none;
+padding: 12px 20px;
+cursor: pointer;
+font-size: 16px;
+border-radius: 4px;
+transition: background-color 0.3s;
+font-weight: bold;
+                    }
+.submit-btn:hover {
+background-color: yellow;
+color: black;
+font-weight: bold;
+}
+.success-message {
+display: none;
+color: #27ae60;
+text-align: center;
+margin-top: 20px;
+font-weight: bold;
+}
+p{
+    font-weight: bold;
+    font-size: larger;
+}
+h2{
+    font-weight: bold;
+    font-size: larger;
+}
+             
+        </style>
+        <link rel="stylesheet" href="tung.css">
+      
+    </head>
+    <body>
+        <nav class="nav">
+            <ul>
+            <li><a href="wibsayt.html">Home Page</a></li>
+            <li><a href="product.html">Product</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+            </ul>
+            </nav>
+ 
+        
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+             
+               
+            </head>
+            <body>
+                <div class="container">
+                    <h1>Contact Us</h1>
+                    
+                    <div class="contact-info">
+<h2>Our Information</h2>
+<p><strong>Email:</strong> contact@example.com</p>
+<p><strong>Phone:</strong>  0917 118 9419</p>
+<p><strong>Address:</strong> 1San Pedro 2 Magalang Pampanga, Magalang, Philippines</p>
+</div>
+                    
+                    <div class="contact-form">
+                        <h2>Send Us a Message</h2>
+           <form id="contactForm">
+            <label for="name">Name:</label>
+                 <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                 <input type="email" id="email" name="email" required>
+                      <label for="subject">Subject:</label>
+                  <input type="text" id="subject" name="subject" required>
+                        <label for="message">Message:</label>
+                            <textarea id="message" name="message" required></textarea>
+                      <button type="submit" class="submit-btn">Send Message</button>
+                        </form>
+                        <div id="successMessage" class="success-message">
+                            Thank you! Your message has been sent successfully.
+                        </div>
+                    </div>
+                </div>
+            
+                <script>
+                    document.getElementById('contactForm').addEventListener('submit', function(e) {
+                        e.preventDefault();
+                        
+                        
+                        document.getElementById('successMessage').style.display = 'block';
+                        document.getElementById('contactForm').reset();
+                        
+                    
+                        setTimeout(function() {
+                            document.getElementById('successMessage').style.display = 'none';
+                        }, 5000);
+                    });
+                </script>
+            </body>
+            </html>
+</html>
